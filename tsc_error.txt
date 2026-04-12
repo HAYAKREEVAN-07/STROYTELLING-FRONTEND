@@ -1,0 +1,1 @@
+src/pages/GuidedBuilderPage.tsx(3,43): error TS6133: 'Home' is declared but its value is never read.
