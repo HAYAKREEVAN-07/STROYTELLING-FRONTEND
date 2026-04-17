@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
 import { Play, TrendingUp, BookOpen, Mic, PenTool, Lightbulb, History, Target, Sparkles, BookText, MessageCircle, ChevronRight } from 'lucide-react';
-import { cn } from '../utils/cn';
+import { cn } from '../../utils/cn';
 
 export function DashboardPage() {
   const navigate = useNavigate();

@@ -1,14 +1,15 @@
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
-import { FlowIndicator } from '../components/FlowIndicator';
-import { ScoreCard } from '../components/ScoreCard';
-import { Accordion } from '../components/Accordion';
-import { Feedback } from '../components/Feedback';
-import { StoryComparison } from '../components/StoryComparison';
-import { evaluationApi } from '../services/api';
+import { Lightbulb } from 'lucide-react';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
+import { FlowIndicator } from '../../components/layout/FlowIndicator';
+import { ScoreCard } from '../../features/evaluation/ScoreCard';
+import { Accordion } from '../../components/ui/Accordion';
+import { Feedback, FeedbackBlock } from '../../features/evaluation/Feedback';
+import { StoryComparison } from '../../features/evaluation/StoryComparison';
+import { evaluationApi } from '../../services/api';
 
 export function EvaluationPage() {
   const location = useLocation();
@@ -141,9 +142,19 @@ export function EvaluationPage() {
           </div>
         }
         right={
-          <section className="bg-indigo-50 border border-indigo-100 rounded-2xl p-8 sticky top-6">
-            <div className="mb-6">
-              <span className="text-sm font-bold uppercase tracking-wider text-indigo-500 mb-2 block">Your Next Step</span>
+          <section className="flex flex-col gap-8 h-full">
+            <FeedbackBlock 
+              title="Actionable Suggestions" 
+              items={evaluation.feedback.suggestions} 
+              icon={<Lightbulb className="w-5 h-5 text-amber-500" />}
+              bgClass="bg-amber-50/50"
+              borderClass="border-amber-100"
+              titleClass="text-amber-800"
+            />
+            
+            <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-8 sticky top-6">
+              <div className="mb-6">
+                <span className="text-sm font-bold uppercase tracking-wider text-indigo-500 mb-2 block">Your Next Step</span>
               <h3 className="text-2xl font-bold text-indigo-900 leading-tight">Keep the momentum going</h3>
             </div>
             <div className="flex flex-col gap-4">
@@ -165,6 +176,7 @@ export function EvaluationPage() {
               >
                 Learn Concept
               </button>
+            </div>
             </div>
           </section>
         }

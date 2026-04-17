@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Story } from '../types/evaluation';
+import { Story } from '../../types/evaluation';
 import { Sparkles, FileText } from 'lucide-react';
-import { cn } from '../utils/cn';
+import { cn } from '../../utils/cn';
 
 interface StoryComparisonProps {
   story: Story;

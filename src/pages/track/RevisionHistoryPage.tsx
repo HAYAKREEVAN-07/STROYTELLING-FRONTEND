@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
 import { BookOpen, Clock, Activity, SplitSquareHorizontal } from 'lucide-react';
-import { cn } from '../utils/cn';
+import { cn } from '../../utils/cn';
 
 const MOCK_HISTORY = [
   {
@@ -34,7 +34,7 @@ export function RevisionHistoryPage() {
   const [comparingId, setComparingId] = useState<number | null>(null);
 
   const handleEvaluate = (storyText: string) => {
-    localStorage.setItem('currentStory', storyText);
+    localStorage.setItem('currentStory', JSON.stringify(storyText));
     navigate('/evaluation', { state: storyText });
   };
 

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronRight, ChevronLeft, Send } from 'lucide-react';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
-import { FlowIndicator } from '../components/FlowIndicator';
-import { VoiceButton } from '../components/VoiceButton';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
+import { FlowIndicator } from '../../components/layout/FlowIndicator';
+import { VoiceButton } from '../../components/ui/VoiceButton';
 
 const STEPS = [
   { id: 'when_where', prompt: 'When and where did this happen?', placeholder: 'Last summer in New York...' },

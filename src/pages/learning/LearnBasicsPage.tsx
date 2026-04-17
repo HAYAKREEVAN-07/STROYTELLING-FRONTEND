@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { BookOpen, Target, Heart, FileText, CheckCircle2 } from 'lucide-react';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
-import { FlowIndicator } from '../components/FlowIndicator';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
+import { FlowIndicator } from '../../components/layout/FlowIndicator';
 
 export function LearnBasicsPage() {
   const navigate = useNavigate();
@@ -79,7 +79,7 @@ export function LearnBasicsPage() {
                 <div className="bg-amber-100 p-2 rounded-lg text-amber-600"><Heart /></div>
                 <h2 className="text-2xl font-bold text-gray-900">3. How to Do It</h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-3 gap-4">
                 <div className="bg-gray-50 p-5 rounded-xl border border-gray-200">
                   <h3 className="font-bold text-gray-900 mb-2">Structure</h3>
                   <p className="text-sm text-gray-600 line-clamp-3">Always have a clear beginning (hook), middle (conflict), and end (resolution/impact).</p>

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
 import { ChevronRight, BookOpen, Heart, MessageCircle, Mic, Loader2 } from 'lucide-react';
-import { VoiceButton } from '../components/VoiceButton';
+import { VoiceButton } from '../../components/ui/VoiceButton';
 
 export function OnboardingPage() {
   const [step, setStep] = useState(1);
@@ -60,7 +60,7 @@ export function OnboardingPage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 sm:p-12 h-full flex flex-col justify-center">
             
             {step === 1 && (
-              <div className="space-y-8 text-left max-w-2xl">
+              <div className="space-y-8 text-left">
                 <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">Learn to Tell Real-Life Stories Clearly</h1>
                 <p className="text-gray-600 text-xl">Master the art of storytelling and captivate any audience, whether in interviews, meetings, or casual chats.</p>
                 <button 
@@ -73,7 +73,7 @@ export function OnboardingPage() {
             )}
 
             {step === 2 && (
-              <div className="space-y-8 max-w-2xl">
+              <div className="space-y-8">
                 <h2 className="text-3xl font-bold text-gray-900">What You'll Learn</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <LearningCard icon={<BookOpen className="w-6 h-6 text-indigo-500" />} title="Structure stories clearly" />
@@ -91,7 +91,7 @@ export function OnboardingPage() {
             )}
 
             {step === 3 && (
-              <div className="space-y-6 max-w-xl">
+              <div className="space-y-6">
                 <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mb-6">
                   <Mic className="w-10 h-10 text-blue-600" />
                 </div>
@@ -135,14 +135,14 @@ export function OnboardingPage() {
 
             {step === 5 && (
               <div className="text-center py-16 space-y-6 flex flex-col items-center justify-center flex-1">
-                <Loader2 className="w-12 h-12 text-blue-600 animate-spin mx-auto" />
+                <Loader2 className="w-12 h-12 text-blue-600 animate-spin" />
                 <h2 className="text-2xl font-bold text-gray-900">Analyzing your story...</h2>
                 <p className="text-gray-500 text-lg">Evaluating structure, emotional depth, and vocabulary.</p>
               </div>
             )}
 
             {step === 6 && (
-              <div className="space-y-8 max-w-xl">
+              <div className="space-y-8">
                 <div>
                   <div className="inline-block px-4 py-1.5 rounded-full bg-green-50 text-green-700 font-semibold text-sm mb-4 border border-green-200">
                     Placement Complete

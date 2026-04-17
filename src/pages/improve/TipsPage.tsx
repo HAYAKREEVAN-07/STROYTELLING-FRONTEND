@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lightbulb, Target, FileText, ChevronRight, Zap } from 'lucide-react';
-import { Header } from '../components/Header';
-import { PageLayout } from '../components/PageLayout';
+import { Header } from '../../components/layout/Header';
+import { PageLayout } from '../../components/layout/PageLayout';
 
 const ALL_TIPS = [
   {

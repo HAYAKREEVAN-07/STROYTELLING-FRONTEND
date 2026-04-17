@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
 import { PenSquare } from 'lucide-react';
-import { VoiceButton } from '../components/VoiceButton';
+import { VoiceButton } from '../../components/ui/VoiceButton';
 
 export function SubmitPage() {
   const [storyText, setStoryText] = useState('');

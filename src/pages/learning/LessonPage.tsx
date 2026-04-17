@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { CheckCircle, Target, BookTemplate, Lightbulb, Star } from 'lucide-react';
-import { learningStages } from '../data/learningData';
-import { cn } from '../utils/cn';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
-import { FlowIndicator } from '../components/FlowIndicator';
+import { learningStages } from '../../data/learningData';
+import { cn } from '../../utils/cn';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
+import { FlowIndicator } from '../../components/layout/FlowIndicator';
 
 export function LessonPage() {
   const { id } = useParams<{ id: string }>();

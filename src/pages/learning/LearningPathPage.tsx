@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CheckCircle, Lock, Play, BookOpen } from 'lucide-react';
-import { learningStages } from '../data/learningData';
-import { cn } from '../utils/cn';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
+import { learningStages } from '../../data/learningData';
+import { cn } from '../../utils/cn';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
 
 export function LearningPathPage() {
   const navigate = useNavigate();

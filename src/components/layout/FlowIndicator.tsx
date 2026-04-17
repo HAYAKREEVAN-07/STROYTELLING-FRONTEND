@@ -1,5 +1,5 @@
 import { BookOpen, Target, CheckCircle2, Sparkles } from 'lucide-react';
-import { cn } from '../utils/cn';
+import { cn } from '../../utils/cn';
 
 export type FlowStep = 'Learn' | 'Practice' | 'Evaluate' | 'Improve';
 

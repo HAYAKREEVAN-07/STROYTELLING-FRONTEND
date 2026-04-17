@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Mic, Square, Play, RotateCcw, Target, Settings2 } from 'lucide-react';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
-import { cn } from '../utils/cn';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
+import { cn } from '../../utils/cn';
 
 export function DeliveryCoachingPage() {
   const navigate = useNavigate();

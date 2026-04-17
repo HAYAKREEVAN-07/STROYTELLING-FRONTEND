@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
-import { FlowIndicator } from '../components/FlowIndicator';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
+import { FlowIndicator } from '../../components/layout/FlowIndicator';
 import { Wand2, Check, Target } from 'lucide-react';
-import { VoiceButton } from '../components/VoiceButton';
-import { cn } from '../utils/cn';
+import { VoiceButton } from '../../components/ui/VoiceButton';
+import { cn } from '../../utils/cn';
 
 export function WordEnhancementPage() {
   const navigate = useNavigate();

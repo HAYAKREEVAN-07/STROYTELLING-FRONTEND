@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
-import { FlowIndicator } from '../components/FlowIndicator';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
+import { FlowIndicator } from '../../components/layout/FlowIndicator';
 import { Send, CheckCircle2, RotateCcw } from 'lucide-react';
-import { VoiceButton } from '../components/VoiceButton';
-import { cn } from '../utils/cn';
+import { VoiceButton } from '../../components/ui/VoiceButton';
+import { cn } from '../../utils/cn';
 
 interface Message {
   text: string;
@@ -60,8 +60,7 @@ export function RoleplayPage() {
     
     // Safety fallback if they ended without typing anything
     const finalStory = storyString.trim() ? storyString : "I didn't have much to say about this challenge.";
-    
-    localStorage.setItem('currentStory', finalStory);
+    localStorage.setItem('currentStory', JSON.stringify(finalStory));
     navigate('/evaluation', { state: finalStory });
   };
 

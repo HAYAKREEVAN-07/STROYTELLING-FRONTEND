@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
 import { TrendingUp, Target, BarChart2, Star, History } from 'lucide-react';
 
 const MOCK_SCORES = [60, 68, 72, 78, 85];

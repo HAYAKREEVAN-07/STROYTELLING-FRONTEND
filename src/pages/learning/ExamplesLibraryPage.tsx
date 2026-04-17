@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PageLayout } from '../components/PageLayout';
-import { Header } from '../components/Header';
+import { PageLayout } from '../../components/layout/PageLayout';
+import { Header } from '../../components/layout/Header';
 import { BookOpen, ChevronDown, CheckCircle2, Lightbulb, Target, FileText, Activity } from 'lucide-react';
-import { examplesData, CATEGORIES } from '../data/examplesData';
-import { cn } from '../utils/cn';
+import { examplesData, CATEGORIES } from '../../data/examplesData';
+import { cn } from '../../utils/cn';
 
 export function ExamplesLibraryPage() {
   const navigate = useNavigate();

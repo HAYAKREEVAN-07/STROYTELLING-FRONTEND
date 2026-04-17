@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { OnboardingPage } from './pages/OnboardingPage';
-import { DashboardPage } from './pages/DashboardPage';
-import { SubmitPage } from './pages/SubmitPage';
-import { EvaluationPage } from './pages/EvaluationPage';
-import { GuidedBuilderPage } from './pages/GuidedBuilderPage';
-import { TemplatesPage } from './pages/TemplatesPage';
-import { LearningPathPage } from './pages/LearningPathPage';
-import { LessonPage } from './pages/LessonPage';
-import { LearnBasicsPage } from './pages/LearnBasicsPage';
-import { WordEnhancementPage } from './pages/WordEnhancementPage';
-import { TipsPage } from './pages/TipsPage';
-import { RoleplayPage } from './pages/RoleplayPage';
-import { DeliveryCoachingPage } from './pages/DeliveryCoachingPage';
-import { ProgressAnalyticsPage } from './pages/ProgressAnalyticsPage';
-import { RevisionHistoryPage } from './pages/RevisionHistoryPage';
-import { ExamplesLibraryPage } from './pages/ExamplesLibraryPage';
+import { OnboardingPage } from './pages/onboarding/OnboardingPage';
+import { DashboardPage } from './pages/dashboard/DashboardPage';
+import { SubmitPage } from './pages/practice/SubmitPage';
+import { EvaluationPage } from './pages/evaluation/EvaluationPage';
+import { GuidedBuilderPage } from './pages/practice/GuidedBuilderPage';
+import { TemplatesPage } from './pages/practice/TemplatesPage';
+import { LearningPathPage } from './pages/learning/LearningPathPage';
+import { LessonPage } from './pages/learning/LessonPage';
+import { LearnBasicsPage } from './pages/learning/LearnBasicsPage';
+import { WordEnhancementPage } from './pages/improve/WordEnhancementPage';
+import { TipsPage } from './pages/improve/TipsPage';
+import { RoleplayPage } from './pages/practice/RoleplayPage';
+import { DeliveryCoachingPage } from './pages/practice/DeliveryCoachingPage';
+import { ProgressAnalyticsPage } from './pages/track/ProgressAnalyticsPage';
+import { RevisionHistoryPage } from './pages/track/RevisionHistoryPage';
+import { ExamplesLibraryPage } from './pages/learning/ExamplesLibraryPage';
 
 function App() {
   return (

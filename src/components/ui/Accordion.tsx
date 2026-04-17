@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-import { ParameterGroup, Parameter } from '../types/evaluation';
-import { cn } from '../utils/cn';
+import { ParameterGroup, Parameter } from '../../types/evaluation';
+import { cn } from '../../utils/cn';
 
 interface AccordionProps {
   groups: ParameterGroup[];
